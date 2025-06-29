@@ -1,0 +1,96 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: linear-gradient(135deg, #1e1f26, #2e2f38);
+  min-height: 100vh;
+}
+
+.hero {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+}
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.hero-content p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #e0e7ff;
+}
+
+.cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+  background: radial-gradient(circle at top left, #1f1f2c, #2a2b3d);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 260px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5), 0 0 20px rgba(106, 17, 203, 0.6);
+}
+
+.glass-card .icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-shadow: 0 0 5px white;
+}
+
+.glass-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.glass-card p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  background: #15161c;
+  color: #aaa;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .cards-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .glass-card {
+    width: 80%;
+  }
+}

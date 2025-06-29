@@ -1,0 +1,127 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: white;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+.portfolio-hero {
+  text-align: center;
+  padding: 80px 20px 40px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+.portfolio-hero h1 {
+  font-size: 3rem;
+}
+.portfolio-hero p {
+  font-size: 1.2rem;
+  color: #e0e7ff;
+  margin-top: 10px;
+}
+
+.about {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #6d9dfc;
+}
+
+.skills {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+}
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #6d9dfc;
+}
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+.skills-grid span {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+.skills-grid span:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.contact {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+.contact h2 {
+  font-size: 2rem;
+  color: #6d9dfc;
+  margin-bottom: 20px;
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#contact-form input,
+#contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  font-size: 1rem;
+}
+#contact-form textarea {
+  min-height: 120px;
+}
+#contact-form button {
+  padding: 12px;
+  background-color: #6a11cb;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+#contact-form button:hover {
+  background-color: #8844ff;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: #111;
+  color: #bbb;
+}
+
+@media (max-width: 768px) {
+  .portfolio-hero h1 {
+    font-size: 2.2rem;
+  }
+  .skills-grid {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
